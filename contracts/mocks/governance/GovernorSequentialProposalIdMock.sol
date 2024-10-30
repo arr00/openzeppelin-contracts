@@ -18,12 +18,49 @@ abstract contract GovernorSequentialProposalIdMock is
         return super.proposalThreshold();
     }
 
-    function hashProposal(
+    function _propose(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        string memory description,
+        address proposer
+    ) internal virtual override(Governor, GovernorSequentialProposalId) returns (uint256) {
+        return GovernorSequentialProposalId._propose(targets, values, calldatas, description, proposer);
+    }
+
+    function queue(
         address[] memory targets,
         uint256[] memory values,
         bytes[] memory calldatas,
         bytes32 descriptionHash
     ) public virtual override(Governor, GovernorSequentialProposalId) returns (uint256) {
-        return super.hashProposal(targets, values, calldatas, descriptionHash);
+        return GovernorSequentialProposalId.queue(targets, values, calldatas, descriptionHash);
+    }
+
+    function execute(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) public payable virtual override(Governor, GovernorSequentialProposalId) returns (uint256) {
+        return GovernorSequentialProposalId.execute(targets, values, calldatas, descriptionHash);
+    }
+
+    function cancel(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) public virtual override(Governor, GovernorSequentialProposalId) returns (uint256) {
+        return GovernorSequentialProposalId.cancel(targets, values, calldatas, descriptionHash);
+    }
+
+    function _cancel(
+        address[] memory targets,
+        uint256[] memory values,
+        bytes[] memory calldatas,
+        bytes32 descriptionHash
+    ) internal virtual override(Governor, GovernorSequentialProposalId) returns (uint256) {
+        return GovernorSequentialProposalId._cancel(targets, values, calldatas, descriptionHash);
     }
 }

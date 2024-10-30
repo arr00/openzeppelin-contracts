@@ -47,13 +47,13 @@ abstract contract Governor is Context, ERC165, EIP712, Nonces, IGovernor, IERC72
     bytes32 private constant ALL_PROPOSAL_STATES_BITMAP = bytes32((2 ** (uint8(type(ProposalState).max) + 1)) - 1);
     string private _name;
 
-    mapping(uint256 proposalId => ProposalCore) private _proposals;
+    mapping(uint256 proposalId => ProposalCore) internal _proposals;
 
     // This queue keeps track of the governor operating on itself. Calls to functions protected by the {onlyGovernance}
     // modifier needs to be whitelisted in this queue. Whitelisting is set in {execute}, consumed by the
     // {onlyGovernance} modifier and eventually reset after {_executeOperations} completes. This ensures that the
     // execution of {onlyGovernance} protected calls can only be achieved through successful proposals.
-    DoubleEndedQueue.Bytes32Deque private _governanceCall;
+    DoubleEndedQueue.Bytes32Deque internal _governanceCall;
 
     /**
      * @dev Restricts a function so it can only be executed through governance proposals. For example, governance
@@ -128,7 +128,7 @@ abstract contract Governor is Context, ERC165, EIP712, Nonces, IGovernor, IERC72
         uint256[] memory values,
         bytes[] memory calldatas,
         bytes32 descriptionHash
-    ) public virtual returns (uint256) {
+    ) public pure virtual returns (uint256) {
         return uint256(keccak256(abi.encode(targets, values, calldatas, descriptionHash)));
     }
 

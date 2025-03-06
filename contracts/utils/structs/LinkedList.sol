@@ -10,8 +10,7 @@ library LinkedList {
     }
 
     struct Bytes32LinkedList {
-        mapping(uint256 => Node) _elements;
-        uint16 _numAdded;
+        Node[] _elements;
         uint16 _numRemoved;
         uint16 _head;
         uint16 _tail;
@@ -33,7 +32,7 @@ library LinkedList {
     }
 
     function _insertForward(Bytes32LinkedList storage self, uint16 index, uint224 val, uint16 size) private {
-        uint16 pointer = ++self._numAdded;
+        uint16 pointer = uint16(self._elements.length);
         uint16 prev = 0;
         uint16 next = self._head;
         uint16 currentIndex = 0;
@@ -44,7 +43,7 @@ library LinkedList {
             currentIndex++;
         }
 
-        self._elements[pointer] = Node(prev, next, val);
+        self._elements.push(Node(prev, next, val));
 
         if (index == 0) {
             self._head = pointer;
@@ -60,7 +59,7 @@ library LinkedList {
     }
 
     function _insertBackward(Bytes32LinkedList storage self, uint16 index, uint224 val, uint16 length_) private {
-        uint16 pointer = ++self._numAdded;
+        uint16 pointer = uint16(self._elements.length);
         uint16 prev = self._tail;
         uint16 next = 0;
         uint16 currentIndex = length_;
@@ -71,7 +70,7 @@ library LinkedList {
             currentIndex--;
         }
 
-        self._elements[pointer] = Node(prev, next, val);
+        self._elements.push(Node(prev, next, val));
         self._elements[prev].next = pointer;
 
         if (index == length_) {
@@ -158,20 +157,19 @@ library LinkedList {
     }
 
     function values(Bytes32LinkedList storage self) internal view returns (uint224[] memory) {
-        uint224[] memory result = new uint224[](length(self));
+        uint16 length_ = length(self);
+        uint224[] memory result = new uint224[](length_);
         uint16 next = self._head;
-        uint16 index = 0;
 
-        while (next != 0) {
-            result[index] = self._elements[next].val;
+        for (uint256 i = 0; i < length_; i++) {
+            result[i] = self._elements[next].val;
             next = self._elements[next].next;
-            index++;
         }
 
         return result;
     }
 
     function length(Bytes32LinkedList storage self) internal view returns (uint16) {
-        return self._numAdded - self._numRemoved;
+        return uint16(self._elements.length - self._numRemoved);
     }
 }

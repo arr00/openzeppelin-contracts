@@ -29,6 +29,10 @@ library Base64 {
         return _encode(data, _TABLE_URL, false);
     }
 
+    function decode(string memory data) internal pure returns (bytes memory) {
+        return _decode(data);
+    }
+
     /**
      * @dev Internal table-agnostic conversion
      */
@@ -115,5 +119,65 @@ library Base64 {
         }
 
         return result;
+    }
+
+    function _decode(string memory data) private pure returns (bytes memory) {
+        bytes memory res = new bytes((bytes(data).length * 3) / 4);
+
+        uint256 dataPointer;
+        uint256 resPointer;
+        assembly ("memory-safe") {
+            dataPointer := add(data, 0x20)
+            resPointer := add(res, 0x20)
+        }
+
+        // Base64 chars are 6 bits each. Iterate over 4 at a time to have 3 bytes.
+        for (uint256 i = 0; i < (bytes(data).length) / 4; i++) {
+            uint8 a;
+            uint8 b;
+            uint8 c;
+            uint8 d;
+
+            assembly ("memory-safe") {
+                let slot := mload(add(dataPointer, mul(i, 4)))
+                a := shr(248, slot)
+                b := shr(240, slot)
+                c := shr(232, slot)
+                d := shr(224, slot)
+            }
+
+            bytes3 vals = bytes3(
+                (uint24(_convertBase64CharToIndex(uint8(a))) << 18) |
+                    (uint24(_convertBase64CharToIndex(uint8(b))) << 12) |
+                    (uint24(_convertBase64CharToIndex(uint8(c))) << 6) |
+                    uint24(_convertBase64CharToIndex(uint8(d)))
+            );
+
+            assembly ("memory-safe") {
+                mstore8(add(resPointer, mul(i, 3)), shr(248, vals))
+                mstore8(add(resPointer, add(mul(i, 3), 1)), shr(240, vals))
+                mstore8(add(resPointer, add(mul(i, 3), 2)), shr(232, vals))
+            }
+        }
+
+        return res;
+    }
+
+    function _convertBase64CharToIndex(uint8 char) private pure returns (uint8) {
+        if (char >= 0x41 && char <= 0x5A) {
+            return char - 0x41;
+        } else if (char >= 0x61 && char <= 0x7A) {
+            return char - 0x47;
+        } else if (char >= 0x30 && char <= 0x39) {
+            return char + 0x04;
+        } else if (char == 0x2B) {
+            return 62;
+        } else if (char == 0x2F) {
+            return 63;
+        } else if (char == 0x3D) {
+            return 0;
+        } else {
+            revert("Invalid Base64 character");
+        }
     }
 }

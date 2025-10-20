@@ -22,7 +22,7 @@ const bigintSign = x => (x > 0n ? 1 : x < 0n ? -1 : 0);
 const comparator = (a, b) => bigintSign(ethers.toBigInt(a) - ethers.toBigInt(b));
 const hasDuplicates = array => array.some((v, i) => array.indexOf(v) != i);
 
-describe.only('Arrays', function () {
+describe('Arrays', function () {
   const fixture = async () => {
     return { mock: await ethers.deployContract('$Arrays') };
   };

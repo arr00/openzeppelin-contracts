@@ -1,6 +1,10 @@
 # Changelog
 
 
+## 5.8.3 (2026-09-28)
+
+- Final patch
+
 ## 5.8.2 (2026-09-28)
 
 - we need another patch

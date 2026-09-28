@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// OpenZeppelin Contracts (last updated v5.8.0-rc.0) (access/manager/AccessManaged.sol)
+// OpenZeppelin Contracts (last updated v5.8.0) (access/manager/AccessManaged.sol)
 
 pragma solidity ^0.8.20;
 

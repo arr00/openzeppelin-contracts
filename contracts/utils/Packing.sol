@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// OpenZeppelin Contracts (last updated v5.8.0-rc.0) (utils/Packing.sol)
+// OpenZeppelin Contracts (last updated v5.8.0) (utils/Packing.sol)
 // This file was procedurally generated from scripts/generate/templates/Packing.sol.eta.
 
 pragma solidity ^0.8.20;

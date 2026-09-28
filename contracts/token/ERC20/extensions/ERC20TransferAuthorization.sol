@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// OpenZeppelin Contracts (last updated v5.7.0) (token/ERC20/extensions/ERC20TransferAuthorization.sol)
+// OpenZeppelin Contracts (last updated v5.8.0) (token/ERC20/extensions/ERC20TransferAuthorization.sol)
 pragma solidity ^0.8.26;
 
 import {SignatureChecker} from "../../../utils/cryptography/SignatureChecker.sol";

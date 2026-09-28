@@ -1,7 +1,7 @@
 # Changelog
 
 
-## 5.8.0-rc.0 (2026-09-28)
+## 5.8.0 (2026-09-28)
 
 - `CrosschainRemoteExecutorUpgradeable`: Add a public `initialize` function to the upgradeable variant, which was previously transpiled with an internal initializer only. ([#6702](https://github.com/OpenZeppelin/openzeppelin-contracts/pull/6702))
 - [BREAKING] `ERC2771Forwarder`: custom error `ERC2771ForwarderFailureInAtomicBatch` has been renamed to `ERC2771ForwarderNoRefundReceiver` ([#6415](https://github.com/OpenZeppelin/openzeppelin-contracts/pull/6415))

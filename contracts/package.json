@@ -1,5 +1,5 @@
 {
-  "name": "@openzeppelin/contracts",
+  "name": "arr00-testing-oz-contracts",
   "description": "Secure Smart Contract library for Solidity",
   "version": "5.7.0",
   "files": [

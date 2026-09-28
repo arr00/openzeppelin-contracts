@@ -380,7 +380,7 @@ This directory includes contracts to build accounts for ERC-4337. These include:
 
 [.contract]
 [[Account]]
-=== `++Account++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/account/Account.sol[{github-icon},role=heading-link]
+=== `++Account++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/account/Account.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -597,7 +597,7 @@ Unauthorized call to the account.
 
 [.contract]
 [[AccountERC7579]]
-=== `++AccountERC7579++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/account/extensions/draft-AccountERC7579.sol[{github-icon},role=heading-link]
+=== `++AccountERC7579++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/account/extensions/draft-AccountERC7579.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -1018,7 +1018,7 @@ The provided initData/deInitData for a fallback module is too short to extract a
 
 [.contract]
 [[AccountERC7579Hooked]]
-=== `++AccountERC7579Hooked++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/account/extensions/draft-AccountERC7579Hooked.sol[{github-icon},role=heading-link]
+=== `++AccountERC7579Hooked++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/account/extensions/draft-AccountERC7579Hooked.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -1245,7 +1245,7 @@ A hook module is already present. This contract only supports one hook module.
 
 [.contract]
 [[ERC7821]]
-=== `++ERC7821++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/account/extensions/draft-ERC7821.sol[{github-icon},role=heading-link]
+=== `++ERC7821++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/account/extensions/draft-ERC7821.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -1354,7 +1354,7 @@ function _erc7821AuthorizedExecutor(
 
 [.contract]
 [[Paymaster]]
-=== `++Paymaster++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/account/paymaster/Paymaster.sol[{github-icon},role=heading-link]
+=== `++Paymaster++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/account/paymaster/Paymaster.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -1583,7 +1583,7 @@ Unauthorized call to the paymaster.
 
 [.contract]
 [[PaymasterERC20]]
-=== `++PaymasterERC20++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/account/paymaster/extensions/PaymasterERC20.sol[{github-icon},role=heading-link]
+=== `++PaymasterERC20++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/account/paymaster/extensions/PaymasterERC20.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -1911,7 +1911,7 @@ and the `actualAmount` of `token`.
 
 [.contract]
 [[PaymasterERC20Guarantor]]
-=== `++PaymasterERC20Guarantor++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/account/paymaster/extensions/PaymasterERC20Guarantor.sol[{github-icon},role=heading-link]
+=== `++PaymasterERC20Guarantor++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/account/paymaster/extensions/PaymasterERC20Guarantor.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -2090,7 +2090,7 @@ Emitted when a user operation identified by `userOpHash` is guaranteed by a `gua
 
 [.contract]
 [[PaymasterERC721Owner]]
-=== `++PaymasterERC721Owner++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/account/paymaster/extensions/PaymasterERC721Owner.sol[{github-icon},role=heading-link]
+=== `++PaymasterERC721Owner++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/account/paymaster/extensions/PaymasterERC721Owner.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -2175,7 +2175,7 @@ also override {_postOp} to process the context passed along.
 
 [.contract]
 [[PaymasterSigner]]
-=== `++PaymasterSigner++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/account/paymaster/extensions/PaymasterSigner.sol[{github-icon},role=heading-link]
+=== `++PaymasterSigner++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/account/paymaster/extensions/PaymasterSigner.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -2360,7 +2360,7 @@ Decodes the user operation's data from `paymasterAndData`.
 
 [.contract]
 [[ERC4337Utils]]
-=== `++ERC4337Utils++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/account/utils/ERC4337Utils.sol[{github-icon},role=heading-link]
+=== `++ERC4337Utils++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/account/utils/ERC4337Utils.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -2640,7 +2640,7 @@ Mask for the lower 47 bits of a 6-bytes field (equivalent to uint48(~BLOCK_RANGE
 
 [.contract]
 [[ERC7579Utils]]
-=== `++ERC7579Utils++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/account/utils/draft-ERC7579Utils.sol[{github-icon},role=heading-link]
+=== `++ERC7579Utils++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/account/utils/draft-ERC7579Utils.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity

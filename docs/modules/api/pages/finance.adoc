@@ -104,7 +104,7 @@ This directory includes primitives for financial systems:
 
 [.contract]
 [[VestingWallet]]
-=== `++VestingWallet++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/finance/VestingWallet.sol[{github-icon},role=heading-link]
+=== `++VestingWallet++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/finance/VestingWallet.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -295,7 +295,7 @@ an asset given its total historical allocation.
 
 [.contract]
 [[VestingWalletCliff]]
-=== `++VestingWalletCliff++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/finance/VestingWalletCliff.sol[{github-icon},role=heading-link]
+=== `++VestingWalletCliff++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/finance/VestingWalletCliff.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity

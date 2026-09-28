@@ -225,7 +225,7 @@ Additionally there are multiple bridge constructions:
 
 [.contract]
 [[CrosschainLinked]]
-=== `++CrosschainLinked++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/crosschain/CrosschainLinked.sol[{github-icon},role=heading-link]
+=== `++CrosschainLinked++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/crosschain/CrosschainLinked.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -363,7 +363,7 @@ Note: the `chain` argument is a "chain-only" InteroperableAddress (empty address
 
 [.contract]
 [[CrosschainRemoteExecutor]]
-=== `++CrosschainRemoteExecutor++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/crosschain/CrosschainRemoteExecutor.sol[{github-icon},role=heading-link]
+=== `++CrosschainRemoteExecutor++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/crosschain/CrosschainRemoteExecutor.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -495,7 +495,7 @@ Reverted when a non-controller tries to relay instructions to this executor.
 
 [.contract]
 [[ERC7786Recipient]]
-=== `++ERC7786Recipient++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/crosschain/ERC7786Recipient.sol[{github-icon},role=heading-link]
+=== `++ERC7786Recipient++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/crosschain/ERC7786Recipient.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -592,7 +592,7 @@ Error thrown if the gateway is not authorized to send messages to this contract 
 
 [.contract]
 [[BridgeFungible]]
-=== `++BridgeFungible++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/crosschain/bridges/abstract/BridgeFungible.sol[{github-icon},role=heading-link]
+=== `++BridgeFungible++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/crosschain/bridges/abstract/BridgeFungible.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -740,7 +740,7 @@ Revert reason when the address part of the interoperable address is empty.
 
 [.contract]
 [[BridgeNonFungible]]
-=== `++BridgeNonFungible++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/crosschain/bridges/abstract/BridgeNonFungible.sol[{github-icon},role=heading-link]
+=== `++BridgeNonFungible++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/crosschain/bridges/abstract/BridgeNonFungible.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -878,7 +878,7 @@ Revert reason when the address part of the interoperable address is empty.
 
 [.contract]
 [[BridgeMultiToken]]
-=== `++BridgeMultiToken++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/crosschain/bridges/abstract/BridgeMultiToken.sol[{github-icon},role=heading-link]
+=== `++BridgeMultiToken++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/crosschain/bridges/abstract/BridgeMultiToken.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -1013,7 +1013,7 @@ Revert reason when the address part of the interoperable address is empty.
 
 [.contract]
 [[BridgeERC20]]
-=== `++BridgeERC20++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/crosschain/bridges/BridgeERC20.sol[{github-icon},role=heading-link]
+=== `++BridgeERC20++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/crosschain/bridges/BridgeERC20.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -1134,7 +1134,7 @@ chain. Once the counterpart chain supply exceeds the custodied balance, redempti
 
 [.contract]
 [[BridgeERC721]]
-=== `++BridgeERC721++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/crosschain/bridges/BridgeERC721.sol[{github-icon},role=heading-link]
+=== `++BridgeERC721++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/crosschain/bridges/BridgeERC721.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -1272,7 +1272,7 @@ transfer directly without having to take temporary custody of the token.
 
 [.contract]
 [[BridgeERC1155]]
-=== `++BridgeERC1155++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/crosschain/bridges/BridgeERC1155.sol[{github-icon},role=heading-link]
+=== `++BridgeERC1155++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/crosschain/bridges/BridgeERC1155.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -1470,7 +1470,7 @@ Support receiving tokens only if the transfer was initiated by the bridge itself
 
 [.contract]
 [[BridgeERC7802]]
-=== `++BridgeERC7802++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.8.0/contracts/crosschain/bridges/BridgeERC7802.sol[{github-icon},role=heading-link]
+=== `++BridgeERC7802++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.9.0/contracts/crosschain/bridges/BridgeERC7802.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity

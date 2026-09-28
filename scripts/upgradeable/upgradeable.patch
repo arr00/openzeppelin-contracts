@@ -116,13 +116,13 @@ index 0408a9fda..7bf53e3a3 100644
  }
  ```
 diff --git a/contracts/package.json b/contracts/package.json
-index 0f0252dd7..a8785361c 100644
+index 9609f3bcc..47c2e3fec 100644
 --- a/contracts/package.json
 +++ b/contracts/package.json
 @@ -1,5 +1,5 @@
  {
--  "name": "@openzeppelin/contracts",
-+  "name": "@openzeppelin/contracts-upgradeable",
+-  "name": "arr00-testing-oz-contracts",
++  "name": "arr00-testing-oz-contracts-upgradeable",
    "description": "Secure Smart Contract library for Solidity",
    "version": "5.7.0",
    "files": [
@@ -146,7 +146,7 @@ index 0f0252dd7..a8785361c 100644
 +  }
  }
 diff --git a/contracts/token/ERC20/extensions/ERC20TransferAuthorization.sol b/contracts/token/ERC20/extensions/ERC20TransferAuthorization.sol
-index b818d327b..8cdff61fa 100644
+index bb6c2ca05..6439e4bef 100644
 --- a/contracts/token/ERC20/extensions/ERC20TransferAuthorization.sol
 +++ b/contracts/token/ERC20/extensions/ERC20TransferAuthorization.sol
 @@ -15,6 +15,14 @@ import {ERC3009} from "./draft-ERC3009.sol";
@@ -370,10 +370,10 @@ index e66fae29c..490d991e8 100644
    },
    docgen: await import('./docs/config.mjs').then(m => m.default),
 diff --git a/package.json b/package.json
-index 8c6a287a2..ef7b67d75 100644
+index 2006c2286..51ceed474 100644
 --- a/package.json
 +++ b/package.json
-@@ -36,7 +36,7 @@
+@@ -37,7 +37,7 @@
    },
    "repository": {
      "type": "git",

@@ -1,6 +1,10 @@
 # Changelog
 
 
+## 5.9.0 (2026-09-28)
+
+- Just a minor changeset
+
 ## 5.8.0 (2026-09-28)
 
 - `CrosschainRemoteExecutorUpgradeable`: Add a public `initialize` function to the upgradeable variant, which was previously transpiled with an internal initializer only. ([#6702](https://github.com/OpenZeppelin/openzeppelin-contracts/pull/6702))

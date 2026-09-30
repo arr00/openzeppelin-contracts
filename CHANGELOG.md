@@ -1,6 +1,10 @@
 # Changelog
 
 
+## 5.8.4 (2026-09-30)
+
+- Add a patch changeset to test issue assignemnt
+
 ## 5.8.3 (2026-09-28)
 
 - Final patch

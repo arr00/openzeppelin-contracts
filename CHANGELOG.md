@@ -1,6 +1,10 @@
 # Changelog
 
 
+## 5.8.7 (2026-10-08)
+
+- add another patch. sleep this time
+
 ## 5.8.6 (2026-10-08)
 
 - Add a patch release here

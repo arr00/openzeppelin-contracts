@@ -1,6 +1,10 @@
 # Changelog
 
 
+## 5.8.6 (2026-10-08)
+
+- Add a patch release here
+
 ## 5.8.5 (2026-10-08)
 
 - another patch

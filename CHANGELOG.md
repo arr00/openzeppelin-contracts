@@ -1,6 +1,10 @@
 # Changelog
 
 
+## 5.8.8 (2026-10-08)
+
+- Extend delay
+
 ## 5.8.7 (2026-10-08)
 
 - add another patch. sleep this time

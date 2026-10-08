@@ -1,6 +1,10 @@
 # Changelog
 
 
+## 5.8.9 (2026-10-08)
+
+- 5 minute sleep
+
 ## 5.8.8 (2026-10-08)
 
 - Extend delay

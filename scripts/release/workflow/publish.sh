@@ -10,7 +10,7 @@ npm publish "$TARBALL" --tag "$TAG"
 
 # Clean up tags
 delete_tag() {
-  sleep 120
+  sleep 300
   npm dist-tag rm "$PACKAGE_JSON_NAME" "$1"
 }
 
